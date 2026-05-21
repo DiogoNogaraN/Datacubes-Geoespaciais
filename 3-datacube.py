@@ -1,5 +1,5 @@
 """
-3-datacube.py -- AgroSirius  Modulo 3
+3-datacube.py -- Modulo 3
 
 Monta dois datacubes NumPy a partir dos outputs do Modulo 2:
 

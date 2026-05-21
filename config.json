@@ -1,0 +1,116 @@
+{
+  "cliente": {
+    "nome": "Fazenda_Exemplo",
+    "pasta_destino": "/dados/clientes/Fazenda_Exemplo"
+  },
+  "parametros_gerais": {
+    "caminho_shp": "/dados/clientes/Fazenda_Exemplo/inputs/contorno_fazenda.shp",
+    "src_projeto": "EPSG:32722"
+  },
+  "topografia": {
+    "caminho_modelo_qgis": "/app/topografia.model3",
+    "pasta_inputs_qgis": "/dados/clientes/Fazenda_Exemplo/TOPOGRAFIA",
+    "variaveis": [
+      "SWI",
+      "declividade",
+      "altitude",
+      "nortecidade",
+      "lestecidade"
+    ],
+    "buffer_download_dem_graus": 0.1
+  },
+  "limpeza": {
+    "datas_para_remover": []
+  },
+  "download": {
+    "data_inicio": "2022-01-01",
+    "data_fim": "2025-12-31",
+    "frequencia": "mensal",
+    "meses_safra": [],
+    "indices": [
+      "NDVI",
+      "NDRE",
+      "GNDVI",
+      "GOSAVI",
+      "MCARI",
+      "MCARI1",
+      "LNC",
+      "NDWI1",
+      "NDWI2"
+    ],
+    "max_cloud_cover": 15
+  },
+  "copernicus": {
+    "usuario": "teu_email@email.com",
+    "senha": "tua_senha_segura"
+  },
+  "hants": {
+    "nf_padrao": 4,
+    "fet_padrao": 0.1,
+    "hiperparametros_indices": {
+      "NDVI": {
+        "HiLo": "Lo",
+        "low": 0.2,
+        "high": 1.0,
+        "dod": 1,
+        "delta": 0.1
+      },
+      "NDRE": {
+        "HiLo": "Lo",
+        "low": 0.2,
+        "high": 1.0,
+        "dod": 1,
+        "delta": 0.1
+      },
+      "GNDVI": {
+        "HiLo": "Lo",
+        "low": 0.2,
+        "high": 1.0,
+        "dod": 1,
+        "delta": 0.1
+      },
+      "GOSAVI": {
+        "HiLo": "Lo",
+        "low": 0.2,
+        "high": 1.0,
+        "dod": 1,
+        "delta": 0.1
+      },
+      "MCARI": {
+        "HiLo": "Lo",
+        "low": 400.0,
+        "high": 3000.0,
+        "dod": 1,
+        "delta": 0.1
+      },
+      "MCARI1": {
+        "HiLo": "Lo",
+        "low": 500.0,
+        "high": 7000.0,
+        "dod": 1,
+        "delta": 0.1
+      },
+      "LNC": {
+        "HiLo": "Lo",
+        "low": 1.0,
+        "high": 4.0,
+        "dod": 1,
+        "delta": 0.1
+      },
+      "NDWI1": {
+        "HiLo": "Lo",
+        "low": -0.2,
+        "high": 0.1,
+        "dod": 1,
+        "delta": 0.1
+      },
+      "NDWI2": {
+        "HiLo": "Lo",
+        "low": 0.0,
+        "high": 1.0,
+        "dod": 1,
+        "delta": 0.1
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "cliente": {
+    "nome": "Nome_Area",
+    "hd_letra": "D",
+    "src_projeto": "Seu_SRC",
+    "frequencia": "mensal",
+    "meses_safra": "",
+    "data_inicio": "2022-01-01",
+    "data_fim": "2025-12-31",
+    "copernicus_user": "teu_email@email.com",
+    "copernicus_pass": "tua_senha"
+  },
+  "areas": [
+    { "nome": "FAZENDA_A",      "shp_filename": "fazenda_a.shp" },
+    { "nome": "FAZENDA_B", "shp_filename": "fazenda_b.shp" },
+    { "nome": "FAZENDA_C", "shp_filename": "fazenda_c.shp" }
+  ]
+}
