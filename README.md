@@ -142,6 +142,21 @@ Configure o arquivo `areas_lote.json` (veja exemplo no repositório) e execute:
 
 ---
 
+## Delineamento de Zonas de Manejo
+
+O notebook `FCM_zonas_manejo.ipynb` demonstra um pipeline completo de clustering para delineamento de zonas de manejo a partir dos datacubes gerados pelo pipeline:
+
+1. **Extração de features por pixel** — baseline por flatten temporal-espectral (`T × F` dimensões) com redução de dimensionalidade via PCA (opcional). A etapa é intercambiável: qualquer extrator que produza um array `(N_pixels, D)` pode ser utilizado no lugar do baseline, incluindo autoencoders, redes convolucionais e outros modelos de aprendizado de máquina.
+2. **Fuzzy C-Means (FCM)** — clustering fuzzy com avaliação automática do número de zonas via **FPC (Fuzzy Partition Coefficient)**.
+3. **Visualização** — mapa de zonas dominantes e mapas de pertinência por zona.
+
+**Dependências adicionais** (não incluídas no Docker do pipeline):
+```bash
+pip install scikit-fuzzy scikit-learn
+```
+
+---
+
 ## Ferramentas de Auditoria
 
 O repositório inclui scripts de inspeção para verificar a qualidade dos outputs em cada etapa:
